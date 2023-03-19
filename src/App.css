@@ -1,0 +1,146 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.App {
+  margin: auto;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  background-color: rgb(224, 244, 244);
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  font-size: 24px;
+}
+
+.app-name{
+  padding: 20px;
+  background-color: blue;
+  color: white;
+  line-height: 50px;
+  font-weight: 700;
+  align-items: center;
+  font-size: 2rem;
+  word-spacing: 1rem;
+  letter-spacing: 0.2rem;
+  display: flex;
+  justify-content: center;
+}
+.app-name>img{
+  width: 60px;
+  margin-right: 20px;
+}
+.header-container{
+  margin: auto;
+  margin-top: 0;
+  width: 100%;
+  border: 1px solid rgb(6, 35, 250);
+  background-color: rgb(255, 255, 255);
+  box-sizing: border-box;
+}
+.header{
+  margin: 10px auto;
+  width: 60%;
+  /* border: 1px solid rgb(2, 11, 255); */
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+}
+.options{
+  font-weight: 700;
+  /* background-color: rgb(0, 0, 0); */
+  color: rgb(0, 17, 255);
+  width: 200px;
+  padding: 5px;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  
+}
+.options>select{
+  color: blue;
+  border-color: blue;
+  margin-top: 10px;
+  padding: 10px;
+  /* border: none; */
+  border-radius: 5px;
+}
+.txt-container{
+  width: 90%;
+  /* height: 50%; */
+  padding: 10px;
+  margin: auto;
+  margin-top: 0;
+  /* border: 1px solid red; */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+.txt-inner{
+  display: flex;
+}
+.txt-area{
+  padding: 10px;
+  width: 100%;
+  /* border: 1px solid rgb(0, 47, 255); */
+  box-sizing: border-box;
+}
+textarea{
+  font-size: 1rem;
+  width: 100%;
+  /* max-width: 500px; */
+  margin: auto;
+  padding: 15px 20px;
+  border-radius: 5px;
+  border: none;
+  outline: blue;
+  /* border: 1px solid red; */
+  box-sizing: border-box;
+}
+/* .input-area{
+  width: 100%;
+  border: 1px solid rgb(0, 47, 255);
+  
+  box-sizing: border-box;
+
+}
+.output-area{
+  width: 100%;
+  border: 1px solid rgb(0, 47, 255);
+} */
+select{
+  padding: 5px; 
+}
+
+.btn{
+  margin-top: 20px;
+  width: 150px;
+  height: 40px;
+  padding: 5px 10px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  letter-spacing: 3px;
+  cursor: pointer;
+  transition: background-color 0.8s ease;
+}
+
+@keyframes hover-animation {
+  0% {
+  }
+  50% {
+    scale: 105%;
+  }
+  100% {
+    
+  }
+}
+.btn:hover{
+  background-color: blue;
+  animation: hover-animation 0.8s infinite;
+}
